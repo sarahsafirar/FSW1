@@ -1,0 +1,1 @@
+console.log('haii external js')

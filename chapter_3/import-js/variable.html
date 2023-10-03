@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable JS</title>
+</head>
+
+<body>
+    <script>
+        let name = 'Safira';
+
+        if (name == 'Safira') {
+            let name = 'Sarah';
+
+            console.log("Nama didalam : ", name);
+        }
+        console.log("Nama diluar : ", name);
+        // function changeName() {
+
+        //     var name = 'Sarah'
+        //     console.log("Nama didalam : ", name);
+        // }
+
+        // changeName();
+
+        // console.log("Nama diluar : ", name);
+
+        // Constant
+        const earthShape = 'bulat';
+        // earthShape = 'kotak';
+
+        console.log(earthShape);
+        console.log(typeof earthShape)
+
+        // Data Type 
+        // 1. Array & Object
+        const person = {
+            name: 'Sarah',
+            age: 24,
+            pets: [{
+                name: "oyen",
+                speciesName: "cat",
+                accesories: [{
+                    name: 'kalung'
+                }, {
+                    name: 'gelang'
+                }]
+            }, {
+                name: "bob",
+                speciesName: "cat"
+            }]
+        };
+
+
+        // Looping data one by one
+        console.log(
+            person.pets.forEach(function(value) {
+                console.log('Pets: ', value);
+            })
+        );
+
+        console.log(person.pets[0].name);
+
+        // Latihan
+        const x = 21;
+        const y = 23;
+        const z = x + y - 19;
+
+        console.log("Nilai z adalah:", z);
+    </script>
+</body>
+
+</html>
